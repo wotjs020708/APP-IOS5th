@@ -17,13 +17,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="g7B-DZ-55n">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="505"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="lNZ-WY-c30">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                </tableView>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="journalCell" id="hop-za-0Pv">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="44.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hop-za-0Pv" id="CF6-f5-5gg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="hvy-HR-mWr"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ZPW-cX-ZvC"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -35,14 +45,43 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="g7B-DZ-55n" secondAttribute="bottom" id="S8Z-Ru-GXM"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Journal" id="RcG-mS-SrO"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Journal" id="RcG-mS-SrO">
+                        <barButtonItem key="rightBarButtonItem" title="Add" image="plus" catalog="system" id="GFf-Wh-EEI"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="tableView" destination="lNZ-WY-c30" id="Sva-Ab-MYt"/>
+                        <outlet property="tableView" destination="g7B-DZ-55n" id="S1Q-dZ-khk"/>
+                        <segue destination="IBt-RU-imE" kind="presentation" id="j6K-S3-Q4L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2919.8473282442746" y="-2.1126760563380285"/>
+        </scene>
+        <!--New Entry-->
+        <scene sceneID="oVL-Zb-NlO">
+            <objects>
+                <viewController id="EJe-ka-mB9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EHa-uk-MEb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ZW5-Un-JLK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Entry" id="RWR-fV-Ner">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="2Ch-AF-Q7Y">
+                            <connections>
+                                <segue destination="N4V-S5-xen" kind="unwind" unwindAction="unwindNewEntryCencelWithSegue:" id="mMG-eY-SNp"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="BcD-s1-7rc"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SBa-0Q-Otw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="N4V-S5-xen" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4726" y="-2"/>
         </scene>
         <!--Map-->
         <scene sceneID="zZG-Zi-WKP">
@@ -116,12 +155,34 @@
             </objects>
             <point key="canvasLocation" x="1993" y="796"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DWu-7d-72B">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IBt-RU-imE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8hq-Js-R0a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="EJe-ka-mB9" kind="relationship" relationship="rootViewController" id="HMe-e5-JXk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cJu-B0-0Ci" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3862" y="-2"/>
+        </scene>
     </scenes>
     <resources>
         <image name="map" catalog="system" width="128" height="112"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
