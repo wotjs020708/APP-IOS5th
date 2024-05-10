@@ -14,6 +14,7 @@
 		4B74DD3E2BE9F87300E6ECB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B74DD3D2BE9F87300E6ECB2 /* Assets.xcassets */; };
 		4B74DD412BE9F87300E6ECB2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4B74DD402BE9F87300E6ECB2 /* Base */; };
 		4B8FC4722BEDB8CE0085508E /* JounrnalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FC4712BEDB8CE0085508E /* JounrnalEntry.swift */; };
+		4B8FC4742BEDC0DA0085508E /* JournalListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FC4732BEDC0DA0085508E /* JournalListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4B74DD402BE9F87300E6ECB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B74DD422BE9F87300E6ECB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B8FC4712BEDB8CE0085508E /* JounrnalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JounrnalEntry.swift; sourceTree = "<group>"; };
+		4B8FC4732BEDC0DA0085508E /* JournalListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		4B8FC4702BEDB8700085508E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4B8FC4732BEDC0DA0085508E /* JournalListTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				4B74DD392BE9F87200E6ECB2 /* JournalListViewController.swift in Sources */,
 				4B8FC4722BEDB8CE0085508E /* JounrnalEntry.swift in Sources */,
 				4B74DD352BE9F87200E6ECB2 /* AppDelegate.swift in Sources */,
+				4B8FC4742BEDC0DA0085508E /* JournalListTableViewCell.swift in Sources */,
 				4B74DD372BE9F87200E6ECB2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
