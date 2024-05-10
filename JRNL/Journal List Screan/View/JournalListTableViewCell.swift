@@ -8,7 +8,11 @@
 import UIKit
 
 class JournalListTableViewCell: UITableViewCell {
-
+    @IBOutlet var photoImageView: UIImageView!
+    @IBOutlet var dateLable: UILabel!
+    @IBOutlet var titleLable: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
