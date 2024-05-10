@@ -143,7 +143,6 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="128" id="npx-GW-193"/>
                                         </constraints>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -185,6 +184,7 @@
                     <connections>
                         <outlet property="bodyTextView" destination="Tjc-JO-4x7" id="rmz-SL-JiP"/>
                         <outlet property="photoImageView" destination="G4G-eo-4lz" id="vbn-yC-72F"/>
+                        <outlet property="saveButton" destination="BcD-s1-7rc" id="2xq-HK-3qn"/>
                         <outlet property="titleTextField" destination="FkG-xE-xfg" id="9Mg-5C-tQU"/>
                     </connections>
                 </viewController>
