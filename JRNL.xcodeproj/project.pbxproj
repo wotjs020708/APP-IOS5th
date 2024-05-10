@@ -16,6 +16,7 @@
 		4B8FC4722BEDB8CE0085508E /* JounrnalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FC4712BEDB8CE0085508E /* JounrnalEntry.swift */; };
 		4B8FC4742BEDC0DA0085508E /* JournalListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FC4732BEDC0DA0085508E /* JournalListTableViewCell.swift */; };
 		4B8FC4772BEDDD730085508E /* AddJournalEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FC4762BEDDD730085508E /* AddJournalEntryViewController.swift */; };
+		4B8FC47A2BEE01E30085508E /* JournalEntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FC4792BEE01E30085508E /* JournalEntryDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4B8FC4712BEDB8CE0085508E /* JounrnalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JounrnalEntry.swift; sourceTree = "<group>"; };
 		4B8FC4732BEDC0DA0085508E /* JournalListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalListTableViewCell.swift; sourceTree = "<group>"; };
 		4B8FC4762BEDDD730085508E /* AddJournalEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJournalEntryViewController.swift; sourceTree = "<group>"; };
+		4B8FC4792BEE01E30085508E /* JournalEntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		4B74DD332BE9F87200E6ECB2 /* JRNL */ = {
 			isa = PBXGroup;
 			children = (
+				4B8FC4782BEE018A0085508E /* Entry Datail Scene */,
 				4B8FC4752BEDDCEA0085508E /* Add New Entry Screen */,
 				4B74DD342BE9F87200E6ECB2 /* AppDelegate.swift */,
 				4B74DD362BE9F87200E6ECB2 /* SceneDelegate.swift */,
@@ -106,6 +109,14 @@
 				4B8FC4762BEDDD730085508E /* AddJournalEntryViewController.swift */,
 			);
 			path = "Add New Entry Screen";
+			sourceTree = "<group>";
+		};
+		4B8FC4782BEE018A0085508E /* Entry Datail Scene */ = {
+			isa = PBXGroup;
+			children = (
+				4B8FC4792BEE01E30085508E /* JournalEntryDetailViewController.swift */,
+			);
+			path = "Entry Datail Scene";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 				4B74DD352BE9F87200E6ECB2 /* AppDelegate.swift in Sources */,
 				4B8FC4742BEDC0DA0085508E /* JournalListTableViewCell.swift in Sources */,
 				4B74DD372BE9F87200E6ECB2 /* SceneDelegate.swift in Sources */,
+				4B8FC47A2BEE01E30085508E /* JournalEntryDetailViewController.swift in Sources */,
 				4B8FC4772BEDDD730085508E /* AddJournalEntryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
