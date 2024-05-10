@@ -32,6 +32,14 @@ class JournalListViewController: UIViewController, UITableViewDataSource, UITabl
         journalCell.titleLable.text = journalEntry.entryTitle
         return journalCell
     }
+    
+    // MARK: - UITableViewDelegate
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            sampleJournalEntryData.journalEntries.remove(at: indexPath.row)
+            tableView.reloadData()
+        }
+    }
     // MARK: - Methods
     @IBAction func unwindNewEntryCencel(segue: UIStoryboardSegue){
         
@@ -40,6 +48,8 @@ class JournalListViewController: UIViewController, UITableViewDataSource, UITabl
         if let sourceViewController = segue.source as? AddJournalEntryViewController, let newJournalEntry = sourceViewController.newJournalEntry {
             sampleJournalEntryData.journalEntries.append(newJournalEntry)
             tableView.reloadData()
+        } else {
+            print("No Entry or Controller")
         }
     }
 
