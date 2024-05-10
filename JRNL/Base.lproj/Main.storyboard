@@ -102,7 +102,7 @@
         <!--New Entry-->
         <scene sceneID="oVL-Zb-NlO">
             <objects>
-                <viewController id="EJe-ka-mB9" sceneMemberID="viewController">
+                <viewController id="EJe-ka-mB9" customClass="AddJournalEntryViewController" customModule="JRNL" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EHa-uk-MEb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
