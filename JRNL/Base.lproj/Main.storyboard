@@ -178,6 +178,11 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="BcD-s1-7rc"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="bodyTextView" destination="Tjc-JO-4x7" id="rmz-SL-JiP"/>
+                        <outlet property="photoImageView" destination="G4G-eo-4lz" id="vbn-yC-72F"/>
+                        <outlet property="titleTextField" destination="FkG-xE-xfg" id="9Mg-5C-tQU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SBa-0Q-Otw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="N4V-S5-xen" userLabel="Exit" sceneMemberID="exit"/>
