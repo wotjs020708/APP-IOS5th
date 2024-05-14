@@ -8,7 +8,7 @@
 import UIKit
 import MapKit
 
-class JournalEntry {
+class JournalEntry: NSObject, MKAnnotation {
     // MARK: - Properties
     let date: Date
     let rating: Int
@@ -58,7 +58,7 @@ struct SampleJournalEntryData {
         guard let journalEntry1 = JournalEntry(rating: 5, title: "Good", body: "Today is good day", photo: photo1) else {
             fatalError("Unble to instantiate journalEntry1")
         }
-        guard let journalEntry2 = JournalEntry(rating: 0, title: "Bad", body: "Today is bad day", photo: photo2) else {
+        guard let journalEntry2 = JournalEntry(rating: 0, title: "Bad", body: "Today is bad day",photo: photo2, latitude: 37.56661, longitude: 126.978388) else {
             fatalError("Unble to instantiate journalEntry2")
         }
         guard let journalEntry3 = JournalEntry(rating: 3, title: "Ok", body: "Today is ok day", photo: photo3) else {
