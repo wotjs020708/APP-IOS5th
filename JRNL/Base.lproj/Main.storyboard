@@ -201,7 +201,7 @@
         <!--Map-->
         <scene sceneID="zZG-Zi-WKP">
             <objects>
-                <viewController id="D7Q-CT-bcx" sceneMemberID="viewController">
+                <viewController id="D7Q-CT-bcx" customClass="MapViewController" customModule="JRNL" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="52h-LX-fYs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
