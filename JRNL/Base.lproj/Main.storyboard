@@ -221,6 +221,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Map" id="Dgg-qR-DMs"/>
+                    <connections>
+                        <outlet property="mapView" destination="8Zx-Fz-8ob" id="uPx-Fp-Sz3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jPQ-lR-vOd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

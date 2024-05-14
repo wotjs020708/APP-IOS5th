@@ -35,6 +35,11 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: any Error) {
+        printContent("Failed to. find user's location \(error.localizedDescription)")
+    }
+    
+    
     // MARK: - Methods
     func setInitialRegion(lat: CLLocationDegrees, long:CLLocationDegrees) -> MKCoordinateRegion {
         MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: lat, longitude: long), span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
