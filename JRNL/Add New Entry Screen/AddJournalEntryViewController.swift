@@ -9,7 +9,7 @@ import UIKit
 import CoreLocation
 
 class AddJournalEntryViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate, CLLocationManagerDelegate {
-
+    
     @IBOutlet var titleTextField: UITextField!
     @IBOutlet var bodyTextView: UITextView!
     @IBOutlet var photoImageView: UIImageView!
@@ -36,7 +36,7 @@ class AddJournalEntryViewController: UIViewController, UITextFieldDelegate, UITe
         // Do any additional setup after loading the view.
     }
     
-
+    
     
     // MARK: - Navigation
     
@@ -51,8 +51,11 @@ class AddJournalEntryViewController: UIViewController, UITextFieldDelegate, UITe
         let lat = currentLocation?.coordinate.latitude
         let long = currentLocation?.coordinate.longitude
         
-        newJournalEntry = JournalEntry(rating: rating, title: title, body: body, photo: photo,
-                                        latitude: lat, longitude: long)
+        newJournalEntry = JournalEntry(rating: rating,
+                                       title: title,
+                                       body: body,
+                                       photo: photo,
+                                       latitude: lat, longitude: long)
     }
     
     //MARK: - UITextFieldDelegate
@@ -61,12 +64,12 @@ class AddJournalEntryViewController: UIViewController, UITextFieldDelegate, UITe
         return true
     }
     
-
-
+    
+    
     func textFieldDidBeginEditing(_ textField: UITextField) {
         updateSaveButtonState()
     }
-
+    
     
     
     // MARK: - UITextViewDelegate
