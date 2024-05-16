@@ -151,10 +151,14 @@
                                     </textView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="face.smiling" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="G4G-eo-4lz">
                                         <rect key="frame" x="67.5" y="269.5" width="200" height="199"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="m8o-Y5-Bij"/>
                                             <constraint firstAttribute="width" constant="200" id="z0Y-lS-CzR"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Yj2-Uq-tHK" appends="YES" id="PhW-ye-6ba"/>
+                                        </connections>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -195,6 +199,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SBa-0Q-Otw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="N4V-S5-xen" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="Yj2-Uq-tHK">
+                    <connections>
+                        <action selector="getPhoto:" destination="EJe-ka-mB9" id="Lme-9H-mfP"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="4726" y="-2"/>
         </scene>

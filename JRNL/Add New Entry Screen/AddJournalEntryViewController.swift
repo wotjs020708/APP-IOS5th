@@ -8,7 +8,7 @@
 import UIKit
 import CoreLocation
 
-class AddJournalEntryViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate, CLLocationManagerDelegate {
+class AddJournalEntryViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate, CLLocationManagerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet var titleTextField: UITextField!
     @IBOutlet var bodyTextView: UITextView!
@@ -121,4 +121,11 @@ class AddJournalEntryViewController: UIViewController, UITextFieldDelegate, UITe
         }
     }
     
+    
+    @IBAction func getPhoto(_ sender: UITapGestureRecognizer) {
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        imagePickerController.sourceType = .photoLibrary
+        present(imagePickerController, animated: true)
+    }
 }
