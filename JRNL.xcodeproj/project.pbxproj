@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4B4F9EE82BF32875009C958C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4F9EE72BF32875009C958C /* MapViewController.swift */; };
+		4B51F0102BF587E6000C7F4E /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B51F00F2BF587E6000C7F4E /* SharedData.swift */; };
 		4B74DD352BE9F87200E6ECB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B74DD342BE9F87200E6ECB2 /* AppDelegate.swift */; };
 		4B74DD372BE9F87200E6ECB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B74DD362BE9F87200E6ECB2 /* SceneDelegate.swift */; };
 		4B74DD392BE9F87200E6ECB2 /* JournalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B74DD382BE9F87200E6ECB2 /* JournalListViewController.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		4B4F9EE72BF32875009C958C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		4B51F00F2BF587E6000C7F4E /* SharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedData.swift; sourceTree = "<group>"; };
 		4B74DD312BE9F87200E6ECB2 /* JRNL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JRNL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B74DD342BE9F87200E6ECB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B74DD362BE9F87200E6ECB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				4B8FC4712BEDB8CE0085508E /* JounrnalEntry.swift */,
+				4B51F00F2BF587E6000C7F4E /* SharedData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B51F0102BF587E6000C7F4E /* SharedData.swift in Sources */,
 				4B74DD392BE9F87200E6ECB2 /* JournalListViewController.swift in Sources */,
 				4B8FC4722BEDB8CE0085508E /* JounrnalEntry.swift in Sources */,
 				4B74DD352BE9F87200E6ECB2 /* AppDelegate.swift in Sources */,
