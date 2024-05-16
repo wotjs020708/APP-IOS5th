@@ -76,9 +76,10 @@
 			children = (
 				4B74DD342BE9F87200E6ECB2 /* AppDelegate.swift */,
 				4B74DD362BE9F87200E6ECB2 /* SceneDelegate.swift */,
+				4B8FC46F2BEDB8650085508E /* Model */,
+				4B8FC46E2BEDB7AF0085508E /* Journal List Screen */,
 				4B8FC4782BEE018A0085508E /* Entry Datail Scene */,
 				4B8FC4752BEDDCEA0085508E /* Add New Entry Screen */,
-				4B8FC46E2BEDB7AF0085508E /* Journal List Screen */,
 				4B4F9EE62BF32844009C958C /* Map Screen */,
 				4B74DD3A2BE9F87200E6ECB2 /* Main.storyboard */,
 				4B74DD3D2BE9F87300E6ECB2 /* Assets.xcassets */,
@@ -92,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				4B8FC4702BEDB8700085508E /* View */,
-				4B8FC46F2BEDB8650085508E /* Model */,
 				4B74DD382BE9F87200E6ECB2 /* JournalListViewController.swift */,
 			);
 			path = "Journal List Screen";

@@ -223,6 +223,7 @@
                     <navigationItem key="navigationItem" title="Map" id="Dgg-qR-DMs"/>
                     <connections>
                         <outlet property="mapView" destination="8Zx-Fz-8ob" id="uPx-Fp-Sz3"/>
+                        <segue destination="ggE-VJ-5Js" kind="show" identifier="showMapDetail" id="sTa-57-06h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jPQ-lR-vOd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -355,7 +356,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="316"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="map" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ybo-gC-Fob">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ybo-gC-Fob">
                                                     <rect key="frame" x="37.5" y="8.5" width="300" height="298.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="300" id="66f-Cl-WLV"/>
@@ -368,6 +369,8 @@
                                                 <constraint firstItem="Ybo-gC-Fob" firstAttribute="centerX" secondItem="ILF-rU-aIB" secondAttribute="centerX" id="EAH-HM-LmW"/>
                                                 <constraint firstItem="Ybo-gC-Fob" firstAttribute="centerX" secondItem="ILF-rU-aIB" secondAttribute="centerX" id="TaM-Zb-LF0"/>
                                                 <constraint firstItem="Ybo-gC-Fob" firstAttribute="centerY" secondItem="ILF-rU-aIB" secondAttribute="centerY" id="UOU-f6-0Rt"/>
+                                                <constraint firstItem="Ybo-gC-Fob" firstAttribute="centerY" secondItem="ILF-rU-aIB" secondAttribute="centerY" id="l1K-QY-taL"/>
+                                                <constraint firstItem="Ybo-gC-Fob" firstAttribute="centerX" secondItem="ILF-rU-aIB" secondAttribute="centerX" id="rX7-Qj-VxF"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -391,6 +394,7 @@
                     <connections>
                         <outlet property="bodyTextView" destination="HB5-Ue-rRF" id="ZUX-ya-HvQ"/>
                         <outlet property="dateLable" destination="obz-VE-Op0" id="o1f-vh-eHL"/>
+                        <outlet property="mapImageView" destination="Ybo-gC-Fob" id="6sV-61-Vr5"/>
                         <outlet property="photoImageView" destination="6RZ-s6-bs1" id="z0A-Ce-v4o"/>
                         <outlet property="titleLabel" destination="3fQ-hZ-cKF" id="PXK-nb-j5y"/>
                     </connections>
@@ -475,6 +479,9 @@
             <point key="canvasLocation" x="3862" y="-2"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="sTa-57-06h"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="face.smiling" catalog="system" width="128" height="123"/>
         <image name="map" catalog="system" width="128" height="112"/>
@@ -487,7 +494,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemCyanColor">
-            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
