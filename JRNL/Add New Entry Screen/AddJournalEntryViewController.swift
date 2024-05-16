@@ -22,7 +22,7 @@ class AddJournalEntryViewController: UIViewController, UITextFieldDelegate, UITe
     let locationManager = CLLocationManager()
     var currentLocation: CLLocation?
     
-    
+    @IBOutlet var ratingView: RatingView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +47,7 @@ class AddJournalEntryViewController: UIViewController, UITextFieldDelegate, UITe
         let title = titleTextField.text ?? ""
         let body = bodyTextView.text ?? ""
         let photo = photoImageView.image
-        let rating = 3
+        let rating = ratingView.rating
         let lat = currentLocation?.coordinate.latitude
         let long = currentLocation?.coordinate.longitude
         

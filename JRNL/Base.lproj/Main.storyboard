@@ -110,9 +110,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Obb-ho-bTg">
                                 <rect key="frame" x="20" y="76" width="335" height="469"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2MI-7V-Eaf">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2MI-7V-Eaf" customClass="RatingView" customModule="JRNL" customModuleProvider="target">
                                         <rect key="frame" x="41.5" y="0.0" width="252" height="44"/>
-                                        <color key="backgroundColor" systemColor="systemCyanColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="LmK-4e-2IR"/>
                                             <constraint firstAttribute="width" constant="252" id="rbP-l4-em7"/>
@@ -189,6 +188,7 @@
                         <outlet property="getLocationSwitch" destination="FpY-dw-Vq8" id="Lyl-xF-lQc"/>
                         <outlet property="getLocationSwitchLabel" destination="WsP-Y2-cRK" id="7Eu-Ev-79Q"/>
                         <outlet property="photoImageView" destination="G4G-eo-4lz" id="vbn-yC-72F"/>
+                        <outlet property="ratingView" destination="2MI-7V-Eaf" id="kss-qd-rRL"/>
                         <outlet property="saveButton" destination="BcD-s1-7rc" id="2xq-HK-3qn"/>
                         <outlet property="titleTextField" destination="FkG-xE-xfg" id="9Mg-5C-tQU"/>
                     </connections>
@@ -269,9 +269,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5SQ-7D-CKC">
+                                                <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5SQ-7D-CKC" customClass="RatingView" customModule="JRNL" customModuleProvider="target">
                                                     <rect key="frame" x="61.5" y="8" width="252" height="44"/>
-                                                    <color key="backgroundColor" systemColor="systemCyanColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="Bjb-S7-Qjw"/>
                                                         <constraint firstAttribute="width" constant="252" id="fUc-KI-ogl"/>
@@ -356,8 +355,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="316"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ybo-gC-Fob">
-                                                    <rect key="frame" x="37.5" y="8.5" width="300" height="298.5"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="map" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ybo-gC-Fob">
+                                                    <rect key="frame" x="37.5" y="9" width="300" height="298.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="300" id="66f-Cl-WLV"/>
                                                         <constraint firstAttribute="height" constant="300" id="IcN-vJ-7Bo"/>
@@ -396,6 +395,7 @@
                         <outlet property="dateLable" destination="obz-VE-Op0" id="o1f-vh-eHL"/>
                         <outlet property="mapImageView" destination="Ybo-gC-Fob" id="6sV-61-Vr5"/>
                         <outlet property="photoImageView" destination="6RZ-s6-bs1" id="z0A-Ce-v4o"/>
+                        <outlet property="ratingView" destination="5SQ-7D-CKC" id="4vM-OC-jRB"/>
                         <outlet property="titleLabel" destination="3fQ-hZ-cKF" id="PXK-nb-j5y"/>
                     </connections>
                 </tableViewController>
@@ -492,9 +492,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemCyanColor">
-            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -8,7 +8,7 @@
 import UIKit
 
 class RatingView: UIStackView {
-    private var ratingButtons = [UIButton()]
+    private var ratingButtons: [UIButton] = []
     var rating = 0 {
         didSet {
             updateButtonSelectionState()
@@ -20,6 +20,7 @@ class RatingView: UIStackView {
     // MARK: - Initialization
     required init(coder: NSCoder){
         super.init(coder: coder)
+        setupButtons()
     }
     
     // MARK: - Private Methods
@@ -41,9 +42,9 @@ class RatingView: UIStackView {
             button.setImage(highlightedStar, for: .highlighted)
             button.setImage(highlightedStar, for: [.highlighted, .selected])
             button.translatesAutoresizingMaskIntoConstraints = false
-            button.widthAnchor.constraint(equalToConstant: buttonSize.width).isActive = true
-            button.heightAnchor.constraint(equalToConstant: buttonSize.height).isActive = true
-            button.addTarget(self, action: #selector(ratingButtonTapped(button:)), for: .touchUpInside)
+//            button.widthAnchor.constraint(equalToConstant: buttonSize.width).isActive = true
+//            button.heightAnchor.constraint(equalToConstant: buttonSize.height).isActive = true
+            button.addTarget(self, action: #selector(ratingButtonTapped(button:)), for: .touchDown)
             addArrangedSubview(button)
             ratingButtons.append(button)
         }
