@@ -19,11 +19,12 @@ class JournalEntryDetailViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        dateLable.text = selectedJournalEntry?.date.formatted(.dateTime.year().month(.wide).day())
+        dateLable.text = selectedJournalEntry?.dateString
         titleLabel.text = selectedJournalEntry?.entryTitle
         bodyTextView.text = selectedJournalEntry?.entrybody
-        photoImageView.image = selectedJournalEntry?.photo
+        if let photoData = selectedJournalEntry?.photoData{
+            photoImageView.image = UIImage(data: photoData)
+        }
         getMapSnapshot()
     }
     // MARK: - Private Methods
