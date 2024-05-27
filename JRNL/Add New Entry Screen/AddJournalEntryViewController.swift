@@ -64,7 +64,10 @@ class AddJournalEntryViewController: UIViewController, UITextFieldDelegate, UITe
         return true
     }
     
-    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        updateSaveButtonState()
+        return true
+    }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         updateSaveButtonState()
@@ -83,7 +86,7 @@ class AddJournalEntryViewController: UIViewController, UITextFieldDelegate, UITe
     }
     
     func textViewDidEndEditing(_ textView: UITextView) {
-        updateViewConstraints()
+        updateSaveButtonState()
     }
     // MARK: - CLLocationManagerDelegate
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
