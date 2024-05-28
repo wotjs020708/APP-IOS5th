@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4B4F9EE82BF32875009C958C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4F9EE72BF32875009C958C /* MapViewController.swift */; };
-		4B51F0102BF587E6000C7F4E /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B51F00F2BF587E6000C7F4E /* SharedData.swift */; };
 		4B51F0142BF5BE2E000C7F4E /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B51F0132BF5BE2E000C7F4E /* RatingView.swift */; };
 		4B74DD352BE9F87200E6ECB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B74DD342BE9F87200E6ECB2 /* AppDelegate.swift */; };
 		4B74DD372BE9F87200E6ECB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B74DD362BE9F87200E6ECB2 /* SceneDelegate.swift */; };
@@ -17,14 +16,13 @@
 		4B74DD3E2BE9F87300E6ECB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B74DD3D2BE9F87300E6ECB2 /* Assets.xcassets */; };
 		4B74DD412BE9F87300E6ECB2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4B74DD402BE9F87300E6ECB2 /* Base */; };
 		4B8FC4722BEDB8CE0085508E /* JounrnalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FC4712BEDB8CE0085508E /* JounrnalEntry.swift */; };
-		4B8FC4742BEDC0DA0085508E /* JournalListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FC4732BEDC0DA0085508E /* JournalListTableViewCell.swift */; };
+		4B8FC4742BEDC0DA0085508E /* JournalListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FC4732BEDC0DA0085508E /* JournalListCollectionViewCell.swift */; };
 		4B8FC4772BEDDD730085508E /* AddJournalEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FC4762BEDDD730085508E /* AddJournalEntryViewController.swift */; };
 		4B8FC47A2BEE01E30085508E /* JournalEntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FC4792BEE01E30085508E /* JournalEntryDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4B4F9EE72BF32875009C958C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		4B51F00F2BF587E6000C7F4E /* SharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedData.swift; sourceTree = "<group>"; };
 		4B51F0132BF5BE2E000C7F4E /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		4B74DD312BE9F87200E6ECB2 /* JRNL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JRNL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B74DD342BE9F87200E6ECB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,7 +33,7 @@
 		4B74DD402BE9F87300E6ECB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B74DD422BE9F87300E6ECB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B8FC4712BEDB8CE0085508E /* JounrnalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JounrnalEntry.swift; sourceTree = "<group>"; };
-		4B8FC4732BEDC0DA0085508E /* JournalListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalListTableViewCell.swift; sourceTree = "<group>"; };
+		4B8FC4732BEDC0DA0085508E /* JournalListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalListCollectionViewCell.swift; sourceTree = "<group>"; };
 		4B8FC4762BEDDD730085508E /* AddJournalEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJournalEntryViewController.swift; sourceTree = "<group>"; };
 		4B8FC4792BEE01E30085508E /* JournalEntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				4B8FC4712BEDB8CE0085508E /* JounrnalEntry.swift */,
-				4B51F00F2BF587E6000C7F4E /* SharedData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -114,7 +111,7 @@
 		4B8FC4702BEDB8700085508E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4B8FC4732BEDC0DA0085508E /* JournalListTableViewCell.swift */,
+				4B8FC4732BEDC0DA0085508E /* JournalListCollectionViewCell.swift */,
 				4B51F0132BF5BE2E000C7F4E /* RatingView.swift */,
 			);
 			path = View;
@@ -207,12 +204,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B51F0102BF587E6000C7F4E /* SharedData.swift in Sources */,
 				4B74DD392BE9F87200E6ECB2 /* JournalListViewController.swift in Sources */,
 				4B8FC4722BEDB8CE0085508E /* JounrnalEntry.swift in Sources */,
 				4B51F0142BF5BE2E000C7F4E /* RatingView.swift in Sources */,
 				4B74DD352BE9F87200E6ECB2 /* AppDelegate.swift in Sources */,
-				4B8FC4742BEDC0DA0085508E /* JournalListTableViewCell.swift in Sources */,
+				4B8FC4742BEDC0DA0085508E /* JournalListCollectionViewCell.swift in Sources */,
 				4B74DD372BE9F87200E6ECB2 /* SceneDelegate.swift in Sources */,
 				4B8FC47A2BEE01E30085508E /* JournalEntryDetailViewController.swift in Sources */,
 				4B8FC4772BEDDD730085508E /* AddJournalEntryViewController.swift in Sources */,
