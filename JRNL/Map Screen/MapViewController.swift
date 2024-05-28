@@ -17,6 +17,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
   
     var selectedJournalEntry: JournalEntry?
     
+    var container: ModelContainer?
+    var context: ModelContext?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManger.delegate = self
@@ -24,6 +27,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         locationManger.desiredAccuracy = kCLLocationAccuracyKilometer
         self.navigationItem.title = "Loding..."
         mapView.delegate = self
+        
+        guard let _container = try? ModelContainer(for: JournalEntry.self) else {
+            fatalError("Could not initialize Container")
+        }
+        container = _container
+        context = ModelContext(_container)
 
     }
     override func viewIsAppearing(_ animated: Bool) {
@@ -40,7 +49,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             self.navigationItem.title = "Map"
             mapView.region = setInitialRegion(lat: lat, long: long)
 //            mapView.addAnnotations(SharedData.shared.getAllJournalEntries())
-            
+            let descrptor = FetchDescriptor<JournalEntry>(predicate: #Predicate{ $0.latitude != nil && $0.longitude != nil})
+            guard let journalEntries = try? context?.fetch(descrptor) else {
+                return
+            }
+            let annotations = journalEntries.map { JournalMapAnnotation(journal: $0) }
+            mapView.addAnnotations(annotations)
         }
     }
     
@@ -51,7 +65,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     // MARK: - MKMapViewDelegate
     func mapView(_ mapView: MKMapView, viewFor annotation: any MKAnnotation) -> MKAnnotationView? {
         let identifier = "mapAnnotation"
-        if annotation is JournalEntry {
+        if annotation is JournalMapAnnotation {
             if let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier){
                 annotationView.annotation = annotation
                 return annotationView
@@ -70,7 +84,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         guard let annotaion = mapView.selectedAnnotations.first else {
             return
         }
-        selectedJournalEntry = annotaion as? JournalEntry
+        selectedJournalEntry = (annotaion as? JournalMapAnnotation)?.journal
         self.performSegue(withIdentifier: "showMapDetail", sender: self)
     }
     

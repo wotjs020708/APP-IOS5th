@@ -19,6 +19,7 @@
 		4B8FC4742BEDC0DA0085508E /* JournalListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FC4732BEDC0DA0085508E /* JournalListCollectionViewCell.swift */; };
 		4B8FC4772BEDDD730085508E /* AddJournalEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FC4762BEDDD730085508E /* AddJournalEntryViewController.swift */; };
 		4B8FC47A2BEE01E30085508E /* JournalEntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FC4792BEE01E30085508E /* JournalEntryDetailViewController.swift */; };
+		4B9A0E4A2C0597320098AC31 /* JournalMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9A0E492C0597320098AC31 /* JournalMapAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		4B8FC4732BEDC0DA0085508E /* JournalListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalListCollectionViewCell.swift; sourceTree = "<group>"; };
 		4B8FC4762BEDDD730085508E /* AddJournalEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJournalEntryViewController.swift; sourceTree = "<group>"; };
 		4B8FC4792BEE01E30085508E /* JournalEntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryDetailViewController.swift; sourceTree = "<group>"; };
+		4B9A0E492C0597320098AC31 /* JournalMapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalMapAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				4B8FC4712BEDB8CE0085508E /* JounrnalEntry.swift */,
+				4B9A0E492C0597320098AC31 /* JournalMapAnnotation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				4B51F0142BF5BE2E000C7F4E /* RatingView.swift in Sources */,
 				4B74DD352BE9F87200E6ECB2 /* AppDelegate.swift in Sources */,
 				4B8FC4742BEDC0DA0085508E /* JournalListCollectionViewCell.swift in Sources */,
+				4B9A0E4A2C0597320098AC31 /* JournalMapAnnotation.swift in Sources */,
 				4B74DD372BE9F87200E6ECB2 /* SceneDelegate.swift in Sources */,
 				4B8FC47A2BEE01E30085508E /* JournalEntryDetailViewController.swift in Sources */,
 				4B8FC4772BEDDD730085508E /* AddJournalEntryViewController.swift in Sources */,
