@@ -8,6 +8,7 @@
 import UIKit
 import CoreLocation
 import MapKit
+import SwiftData
 
 class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
 
