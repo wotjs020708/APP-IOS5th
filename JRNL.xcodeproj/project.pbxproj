@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B3074D22C0801B300CD3277 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3074D12C0801B300CD3277 /* WidgetKit.framework */; };
+		4B3074D42C0801B300CD3277 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3074D32C0801B300CD3277 /* SwiftUI.framework */; };
+		4B3074D72C0801B300CD3277 /* JRNLWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3074D62C0801B300CD3277 /* JRNLWidgetBundle.swift */; };
+		4B3074D92C0801B300CD3277 /* JRNLWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3074D82C0801B300CD3277 /* JRNLWidget.swift */; };
+		4B3074DB2C0801B400CD3277 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B3074DA2C0801B400CD3277 /* Assets.xcassets */; };
+		4B3074DF2C0801B400CD3277 /* JRNLWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4B3074CF2C0801B300CD3277 /* JRNLWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4B3074E42C080AC500CD3277 /* JounrnalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8FC4712BEDB8CE0085508E /* JounrnalEntry.swift */; };
 		4B4F9EE82BF32875009C958C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4F9EE72BF32875009C958C /* MapViewController.swift */; };
 		4B51F0142BF5BE2E000C7F4E /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B51F0132BF5BE2E000C7F4E /* RatingView.swift */; };
 		4B74DD352BE9F87200E6ECB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B74DD342BE9F87200E6ECB2 /* AppDelegate.swift */; };
@@ -22,7 +29,40 @@
 		4B9A0E4A2C0597320098AC31 /* JournalMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9A0E492C0597320098AC31 /* JournalMapAnnotation.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4B3074DD2C0801B400CD3277 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B74DD292BE9F87200E6ECB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B3074CE2C0801B300CD3277;
+			remoteInfo = JRNLWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4B3074E02C0801B400CD3277 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4B3074DF2C0801B400CD3277 /* JRNLWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4B2655662C08327700A9B13D /* JRNLWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JRNLWidgetExtension.entitlements; sourceTree = "<group>"; };
+		4B3074CF2C0801B300CD3277 /* JRNLWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JRNLWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B3074D12C0801B300CD3277 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		4B3074D32C0801B300CD3277 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		4B3074D62C0801B300CD3277 /* JRNLWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JRNLWidgetBundle.swift; sourceTree = "<group>"; };
+		4B3074D82C0801B300CD3277 /* JRNLWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JRNLWidget.swift; sourceTree = "<group>"; };
+		4B3074DA2C0801B400CD3277 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B3074DC2C0801B400CD3277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B3074E52C080B7600CD3277 /* JRNL.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JRNL.entitlements; sourceTree = "<group>"; };
 		4B4F9EE72BF32875009C958C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		4B51F0132BF5BE2E000C7F4E /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		4B74DD312BE9F87200E6ECB2 /* JRNL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JRNL.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +81,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4B3074CC2C0801B300CD3277 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B3074D42C0801B300CD3277 /* SwiftUI.framework in Frameworks */,
+				4B3074D22C0801B300CD3277 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4B74DD2E2BE9F87200E6ECB2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -51,6 +100,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B3074D02C0801B300CD3277 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B3074D12C0801B300CD3277 /* WidgetKit.framework */,
+				4B3074D32C0801B300CD3277 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B3074D52C0801B300CD3277 /* JRNLWidget */ = {
+			isa = PBXGroup;
+			children = (
+				4B3074D62C0801B300CD3277 /* JRNLWidgetBundle.swift */,
+				4B3074D82C0801B300CD3277 /* JRNLWidget.swift */,
+				4B3074DA2C0801B400CD3277 /* Assets.xcassets */,
+				4B3074DC2C0801B400CD3277 /* Info.plist */,
+			);
+			path = JRNLWidget;
+			sourceTree = "<group>";
+		};
 		4B4F9EE62BF32844009C958C /* Map Screen */ = {
 			isa = PBXGroup;
 			children = (
@@ -62,7 +131,10 @@
 		4B74DD282BE9F87200E6ECB2 = {
 			isa = PBXGroup;
 			children = (
+				4B2655662C08327700A9B13D /* JRNLWidgetExtension.entitlements */,
 				4B74DD332BE9F87200E6ECB2 /* JRNL */,
+				4B3074D52C0801B300CD3277 /* JRNLWidget */,
+				4B3074D02C0801B300CD3277 /* Frameworks */,
 				4B74DD322BE9F87200E6ECB2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				4B74DD312BE9F87200E6ECB2 /* JRNL.app */,
+				4B3074CF2C0801B300CD3277 /* JRNLWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +151,7 @@
 		4B74DD332BE9F87200E6ECB2 /* JRNL */ = {
 			isa = PBXGroup;
 			children = (
+				4B3074E52C080B7600CD3277 /* JRNL.entitlements */,
 				4B74DD342BE9F87200E6ECB2 /* AppDelegate.swift */,
 				4B74DD362BE9F87200E6ECB2 /* SceneDelegate.swift */,
 				4B8FC46F2BEDB8650085508E /* Model */,
@@ -139,6 +213,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4B3074CE2C0801B300CD3277 /* JRNLWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B3074E32C0801B400CD3277 /* Build configuration list for PBXNativeTarget "JRNLWidgetExtension" */;
+			buildPhases = (
+				4B3074CB2C0801B300CD3277 /* Sources */,
+				4B3074CC2C0801B300CD3277 /* Frameworks */,
+				4B3074CD2C0801B300CD3277 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JRNLWidgetExtension;
+			productName = JRNLWidgetExtension;
+			productReference = 4B3074CF2C0801B300CD3277 /* JRNLWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		4B74DD302BE9F87200E6ECB2 /* JRNL */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B74DD452BE9F87300E6ECB2 /* Build configuration list for PBXNativeTarget "JRNL" */;
@@ -146,10 +237,12 @@
 				4B74DD2D2BE9F87200E6ECB2 /* Sources */,
 				4B74DD2E2BE9F87200E6ECB2 /* Frameworks */,
 				4B74DD2F2BE9F87200E6ECB2 /* Resources */,
+				4B3074E02C0801B400CD3277 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4B3074DE2C0801B400CD3277 /* PBXTargetDependency */,
 			);
 			name = JRNL;
 			productName = JRNL;
@@ -163,9 +256,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1530;
+				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
+					4B3074CE2C0801B300CD3277 = {
+						CreatedOnToolsVersion = 15.4;
+					};
 					4B74DD302BE9F87200E6ECB2 = {
 						CreatedOnToolsVersion = 15.3;
 					};
@@ -185,11 +281,20 @@
 			projectRoot = "";
 			targets = (
 				4B74DD302BE9F87200E6ECB2 /* JRNL */,
+				4B3074CE2C0801B300CD3277 /* JRNLWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4B3074CD2C0801B300CD3277 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B3074DB2C0801B400CD3277 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4B74DD2F2BE9F87200E6ECB2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -203,6 +308,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4B3074CB2C0801B300CD3277 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B3074D72C0801B300CD3277 /* JRNLWidgetBundle.swift in Sources */,
+				4B3074E42C080AC500CD3277 /* JounrnalEntry.swift in Sources */,
+				4B3074D92C0801B300CD3277 /* JRNLWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4B74DD2D2BE9F87200E6ECB2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -221,6 +336,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B3074DE2C0801B400CD3277 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B3074CE2C0801B300CD3277 /* JRNLWidgetExtension */;
+			targetProxy = 4B3074DD2C0801B400CD3277 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4B74DD3A2BE9F87200E6ECB2 /* Main.storyboard */ = {
@@ -242,6 +365,64 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4B3074E12C0801B400CD3277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = JRNLWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39626F6B8U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JRNLWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JRNLWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.JRNL123.JRNLWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B3074E22C0801B400CD3277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = JRNLWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39626F6B8U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JRNLWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JRNLWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.JRNL123.JRNLWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		4B74DD432BE9F87300E6ECB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -364,14 +545,19 @@
 		4B74DD462BE9F87300E6ECB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JRNL/JRNL.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39626F6B8U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JRNL/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "이 앱은 일기 항목의 생성을 위해 사용자의 카메라를 사용합니다.";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "사용자의 위치정보를 항상 확인합니다.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "사용자의 위치정보를 사용 중에만 확인합니다.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "이 앱은 일기 항목의 생서을 위해 포토 라이브러리를 사용합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -382,7 +568,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.JRNL;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.JRNL123;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -393,14 +579,19 @@
 		4B74DD472BE9F87300E6ECB2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JRNL/JRNL.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39626F6B8U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JRNL/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "이 앱은 일기 항목의 생성을 위해 사용자의 카메라를 사용합니다.";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "사용자의 위치정보를 항상 확인합니다.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "사용자의 위치정보를 사용 중에만 확인합니다.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "이 앱은 일기 항목의 생서을 위해 포토 라이브러리를 사용합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -411,7 +602,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.JRNL;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.JRNL123;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -422,6 +613,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4B3074E32C0801B400CD3277 /* Build configuration list for PBXNativeTarget "JRNLWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B3074E12C0801B400CD3277 /* Debug */,
+				4B3074E22C0801B400CD3277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4B74DD2C2BE9F87200E6ECB2 /* Build configuration list for PBXProject "JRNL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
